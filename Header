@@ -1,0 +1,11 @@
+<?php
+//вывод класса в хедере
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'depth'           => 3,
+							'walker'          => new Avs_Walker_Nav_Menu()
+						)
+					);
